@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Географія. 9 клас</title>
+<meta name="generator" content="WYSIWYG Web Builder 20 - https://www.wysiwygwebbuilder.com">
+<link href="bootstrap/jquery-ui.min.css" rel="stylesheet">
+<link href="Probe.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-3.7.1.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="searchindex.js"></script>
+<script src="wb.sitesearch.min.js"></script>
+<script>
+var features = '';
+function searchPage(features)
+{
+   $('#SiteSearch1-dialog').dialog('open');
+   $('#SiteSearch1-dialog').empty();
+   searchResults('SiteSearch1', 'SiteSearch1-dialog', 250, 5, false, true, false, false, '_parent', 'No results', ' result(s) found for search term: ', 'seconds');
+   $('#SiteSearch1-dialog').dialog('option', 'position', 'center');
+   return false;
+}
+</script>
+<script>
+$(document).ready(function()
+{
+   searchParseURL('SiteSearch1');
+   searchAutoComplete('SiteSearch1', 0, '_parent');
+   $("#SiteSearch1-dialog").dialog(
+   {
+      modal: true,
+      width: 400,
+      height: 300,
+      position: { my: 'center', at: 'center', of: window },
+      resizable: true,
+      draggable: false,
+      closeOnEscape: true,
+      show: false,
+      hide: false,
+      autoOpen: false,
+      buttons: 
+      {
+         Close: function() 
+         {
+            $(this).dialog('close');
+         }
+      }
+   });
+});
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8NLYER0SM8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8NLYER0SM8');
+</script>
+</head>
+<body>
+<div id="space"><br></div>
+<div id="container">
+<div id="wb_Image1" style="position:absolute;left:17px;top:8px;width:966px;height:705px;z-index:0;">
+<img src="cover.jpeg" id="Image1" alt="" width="966" height="810"></div>
+<a id="Button1" href="./title2.html" style="position:absolute;left:658px;top:554px;width:214px;height:77px;z-index:1;">ПОЧНІМО!</a>
+<div id="wb_Text12" style="position:absolute;left:410px;top:677px;width:168px;height:18px;z-index:2;">
+<span style="color:#000000;font-family:Arial;font-size:16px;"><strong> © 2026 ТОВ &quot;Генеза&quot;</strong></span></div>
+<form name="SiteSearch1_form" id="SiteSearch1_form" role="search" accept-charset="UTF-8" onsubmit="return searchPage(features)"></form>
+<input type="text" id="SiteSearch1" style="position:absolute;left:628px;top:24px;width:140px;height:18px;z-index:3;" name="SiteSearch1" value="" spellcheck="false" role="searchbox" form="SiteSearch1_form">
+<div id="SiteSearch1-dialog" title="Search results"></div>
+<input type="button" id="Button2" onclick="searchPage();return false;" name="Search" value="Пошук" style="position:absolute;left:785px;top:25px;width:96px;height:25px;z-index:4;">
+</div>
+</body>
+</html>
